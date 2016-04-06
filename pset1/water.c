@@ -15,8 +15,6 @@ int main(void){
     minutes = strtol(input_string, &pEnd, 10);
     sprintf(test,"%d",minutes);
     strcat(test, "\n");
-    //printf("Input String: %s\n",input_string);
-    //printf("Test: %s\n",test);
     while (strcmp(input_string, test) != 0){
             printf("Retry: ");
             fgets(input_string, 100, stdin);
@@ -26,5 +24,3 @@ int main(void){
     }
     printf("bottles: %d\n", minutes * 12 );
 }
-
-//  && strcmp(input_string, "\n") != 0
